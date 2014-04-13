@@ -78,12 +78,16 @@ public class ClientFrame extends JFrame {
 		
 		BufferedImage img = null;
 		try {
-		    img = ImageIO.read(new File("/home/emma/Desktop/logo_unifiedpost.png"));
+		    img = ImageIO.read(new File("res/logo_unifiedpost.png"));
 		} catch (IOException e) {
 		    e.printStackTrace();
 		}
 		
 		Image simg = img.getScaledInstance(195, 33, Image.SCALE_SMOOTH);
+		JLabel image_label = new JLabel(new ImageIcon(simg));
+		image_label.setLocation(12, 0);
+		image_label.setSize(195,33);
+		contentPane.add(image_label);
 		
 		panel_2 = new JPanel();
 		panel_2.setBounds(0, 53, 864, 385);
@@ -239,9 +243,7 @@ public class ClientFrame extends JFrame {
 		panel.setVisible(true);
 		
 		
-		JLabel image_label = new JLabel(new ImageIcon(simg));
-		image_label.setLocation(12, 0);
-		contentPane.add(image_label);
+		
 		
 // TODO: AICI TREBUIE ADUS DIN BAZA DE DATE USER-UL + POINTS_NUMBER
 		
