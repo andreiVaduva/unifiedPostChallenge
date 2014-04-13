@@ -1,0 +1,31 @@
+
+			iTEC UnifiedPost Challenge
+			 Application development
+			     Employee Delight
+
+
+    In this 48 hours hackathon, our team has been developing a professional
+overcross platform application. To achieve our goal we implement our
+application in java programming language, using APIs like Swing and JDBC.
+
+    Our application strength points are:
+	* user friendly interface
+	* cool design and well implemented features
+	* centralized server with well server-client connection
+
+    Technical details:
+        * 2 packages: one for backend & one for frontend
+	* backend package:
+	    - manage the login sessions
+	    - ensure database connection
+	    - ensure data aggregation for a login session
+	    - ensure database updateing
+	* frontend package:
+	    - with 3 java frames the frontend package ensure a user friendly
+	      interface either as admin either as user
+
+=============================================================================
+COMPILE & RUN
+    * compile with javac
+    * export as .jar file 
+    * run the jar file
