@@ -94,9 +94,9 @@ public class ClientFrame extends JFrame {
 		contentPane.add(panel_2);
 		panel_2.setLayout(null);
 		
-		comboBox_1 = new JComboBox();
-		comboBox_1.setBounds(253, 55, 183, 24);
-		panel_2.add(comboBox_1);
+		//comboBox_1 = new JComboBox();
+		//comboBox_1.setBounds(253, 55, 183, 24);
+		//panel_2.add(comboBox_1);
 		
 		
 		comboBox = new JComboBox(((Administrator)ahelp).listCategory().toArray());
@@ -112,7 +112,10 @@ public class ClientFrame extends JFrame {
 				System.out.println(c.id);
 				DefaultListModel<Product> prod = ((Administrator)ahelp).listProductCategory(c.id);
 				comboBox_1 = new JComboBox(prod.toArray());
+				comboBox_1.setBounds(253, 55, 183, 24);
 				panel_2.add(comboBox_1);
+				
+				//panel_2.add(comboBox_1);
 			}
 		});
 		JLabel lblChooseFromCategories = new JLabel("Choose from categories");
